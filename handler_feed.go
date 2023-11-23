@@ -38,6 +38,7 @@ func (apiCfg *apiConfig) handlerCreateFeed(w http.ResponseWriter, r *http.Reques
 	}
 
 	respondWithJson(w, 201, feed)
+	//apiCfg.handlerCreateFeedFollow(w, r, user)
 }
 
 func (apiCfg *apiConfig) handlerGetFeed(w http.ResponseWriter, r *http.Request) {
